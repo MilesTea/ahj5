@@ -1,0 +1,43 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "server": "live-server .",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "author": "MilesTea <kurwatea@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.1",
+    "http-server": "^14.1.1",
+    "jest-environment-jsdom": "^29.5.0",
+    "jest-puppeteer": "^9.0.0",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.0.2"
+  },
+  "repository": "https://github.com/MilesTea/ahj5",
+  "dependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/plugin-transform-modules-commonjs": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
+    "babel-jest": "^29.5.0",
+    "core-js": "3",
+    "jest": "^29.5.0",
+    "live-server": "1.2.1",
+    "puppeteer": "^20.4.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "preset": "jest-puppeteer"
+  }
+}
